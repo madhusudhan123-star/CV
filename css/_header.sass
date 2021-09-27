@@ -1,0 +1,86 @@
+.nav-1
+    color: white
+    padding: 0
+    margin: 0
+    background: #90caf9
+    width: 100%
+    height: auto
+    position: relative
+    box-shadow: 10px 10px 10px black
+
+    .nav-2
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .name
+            color: black
+            font-family: 'Great Vibes'
+            cursor: pointer
+            font-size: 2.5rem
+            &:hover
+                color: white
+        .nav-button
+            ul
+                list-style-type: none
+                li
+                    color: black
+                    font-size: 1.5rem
+                    padding: 0px 20px
+                    display: inline-block
+                    &:hover
+                        color: white
+    .lines
+        display: none
+        cursor: pointer
+    .two_line
+        margin-top: .5rem
+        margin-right: 2rem
+        margin-left: 1rem
+        width: 40px
+        height: 5px
+        background: white
+        border-radius: 5px
+
+    @media ( max-width:640px  )
+        .lines
+            display: inline-block
+            padding-top: 30px
+            padding-right: 0
+        .name1
+            display: grid
+            grid-template-columns: 90% 10%
+            .name
+
+                cursor: pointer
+                font-size: 2rem
+        .nav-2
+            display: flex
+            flex-direction: column
+        .name
+            color: black
+            font-family: 'Great Vibes'
+            cursor: pointer
+            font-size: 2.5rem
+        .nav-button
+            display: none
+            ul
+                list-style-type: none
+                li
+                    font-size: 1.5rem
+                    padding: 0px 20px
+                    display: inline-block
+        .nav-button.active
+            display: flex
+
+    @media ( max-width: 428px)
+        .nav-2
+            display: flex
+            flex-direction: column
+            .nav-button
+                display: none
+                ul
+                    li
+                        font-size: 1rem
+                        padding: 0px 10px
+            .nav-button.active
+                display: flex

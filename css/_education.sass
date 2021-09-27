@@ -1,0 +1,41 @@
+.educate
+    text-align: center
+    font-size: 3.5rem
+    padding-top: 5px
+.education-2
+    display: grid
+    grid-template-columns: 50% 50%
+    .image-2
+        background: url(../image/education.jpg)center top
+        background-size: cover
+        background-repeat: no-repe
+        width: 100%
+        height: 530px
+        margin-left: 20px
+    .content
+        margin-left: 40px
+        font-size: 1.5rem
+        .edu
+            color: black
+            font-size: 1.7rem
+            width: 100px
+            height: 50px
+            border: none
+            border-radius: 10px
+            background: #00e676
+            &:hover
+                color: white
+
+@media (max-width: 800px)
+    .education-2
+        display: block
+        order: 2
+        .image-2
+            background: url(../image/education.jpg)center top
+            background-size: cover
+            background-repeat: no-repe
+            width: 90%
+            height: 450px
+        .content
+            .edu-btn
+                text-align: center
